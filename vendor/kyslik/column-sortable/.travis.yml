@@ -1,0 +1,33 @@
+language: php
+git:
+  depth: 3
+sudo: false
+
+php:
+  - 5.6
+  - 7.0
+  - 7.1
+
+env:
+  - version=L5-3
+  - version=L5-2
+  - version=L5-1
+
+cache:
+  directories:
+    - $HOME/.composer/cache
+
+before_install:
+  - phpenv config-rm xdebug.ini
+  - travis_retry composer self-update
+
+install:
+  - travis_retry composer install --no-interaction --prefer-dist --no-suggest;
+  - if [[ $version = 'L5-2' ]]; then travis_retry composer require --dev --update-with-dependencies --no-suggest --no-interaction orchestra/testbench:"3.2.*"; fi
+  - if [[ $version = 'L5-1' ]]; then travis_retry composer require --dev --update-with-dependencies --no-suggest --no-interaction orchestra/testbench:"3.1.*"; fi
+
+script: vendor/bin/phpunit
+
+branches:
+  only:
+    - L5.1-3
