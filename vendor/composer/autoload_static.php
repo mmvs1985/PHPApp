@@ -10,8 +10,8 @@ class ComposerStaticInit9df880584d5381e52292c490da2e2a57
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
         '1d1b89d124cc9cb8219922c9d5569199' => __DIR__ . '/..' . '/hamcrest/hamcrest-php/hamcrest/Hamcrest.php',
         '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
-        '2c102faa651ef8ea5874edb585946bce' => __DIR__ . '/..' . '/swiftmailer/swiftmailer/lib/swift_required.php',
         'bd9634f2d41831496de0d3dfe4c94881' => __DIR__ . '/..' . '/symfony/polyfill-php56/bootstrap.php',
+        '2c102faa651ef8ea5874edb585946bce' => __DIR__ . '/..' . '/swiftmailer/swiftmailer/lib/swift_required.php',
         '5255c38a0faeba867671b61dfda6d864' => __DIR__ . '/..' . '/paragonie/random_compat/lib/random.php',
         'e7223560d890eab89cda23685e711e2c' => __DIR__ . '/..' . '/psy/psysh/src/Psy/functions.php',
         'e23faeee409e941dc9b4c80386209c39' => __DIR__ . '/..' . '/laracasts/flash/src/Laracasts/Flash/functions.php',
@@ -26,6 +26,10 @@ class ComposerStaticInit9df880584d5381e52292c490da2e2a57
         array (
             'phpDocumentor\\Reflection\\' => 25,
         ),
+        'Z' => 
+        array (
+            'Zizaco\\Entrust\\' => 15,
+        ),
         'X' => 
         array (
             'XdgBaseDir\\' => 11,
@@ -33,6 +37,7 @@ class ComposerStaticInit9df880584d5381e52292c490da2e2a57
         'W' => 
         array (
             'Webmozart\\Assert\\' => 17,
+            'Watson\\Validating\\' => 18,
         ),
         'S' => 
         array (
@@ -84,6 +89,10 @@ class ComposerStaticInit9df880584d5381e52292c490da2e2a57
         array (
             'Faker\\' => 6,
         ),
+        'E' => 
+        array (
+            'Esensi\\Model\\' => 13,
+        ),
         'D' => 
         array (
             'Dotenv\\' => 7,
@@ -103,6 +112,7 @@ class ComposerStaticInit9df880584d5381e52292c490da2e2a57
         'A' => 
         array (
             'App\\' => 4,
+            'Acoustep\\EntrustGui\\' => 20,
         ),
     );
 
@@ -113,6 +123,10 @@ class ComposerStaticInit9df880584d5381e52292c490da2e2a57
             1 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
             2 => __DIR__ . '/..' . '/phpdocumentor/reflection-common/src',
         ),
+        'Zizaco\\Entrust\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/zizaco/entrust/src/Entrust',
+        ),
         'XdgBaseDir\\' => 
         array (
             0 => __DIR__ . '/..' . '/dnoegel/php-xdg-base-dir/src',
@@ -120,6 +134,10 @@ class ComposerStaticInit9df880584d5381e52292c490da2e2a57
         'Webmozart\\Assert\\' => 
         array (
             0 => __DIR__ . '/..' . '/webmozart/assert/src',
+        ),
+        'Watson\\Validating\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/watson/validating/src',
         ),
         'Symfony\\Polyfill\\Util\\' => 
         array (
@@ -237,6 +255,10 @@ class ComposerStaticInit9df880584d5381e52292c490da2e2a57
         array (
             0 => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker',
         ),
+        'Esensi\\Model\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/esensi/model/src',
+        ),
         'Dotenv\\' => 
         array (
             0 => __DIR__ . '/..' . '/vlucas/phpdotenv/src',
@@ -280,6 +302,10 @@ class ComposerStaticInit9df880584d5381e52292c490da2e2a57
         'App\\' => 
         array (
             0 => __DIR__ . '/../..' . '/app',
+        ),
+        'Acoustep\\EntrustGui\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/acoustep/entrust-gui/src',
         ),
     );
 
@@ -334,6 +360,49 @@ class ComposerStaticInit9df880584d5381e52292c490da2e2a57
     );
 
     public static $classMap = array (
+        'Acoustep\\EntrustGui\\Console\\Commands\\GenerateModels' => __DIR__ . '/..' . '/acoustep/entrust-gui/src/Console/Commands/GenerateModels.php',
+        'Acoustep\\EntrustGui\\Contracts\\HashMethodInterface' => __DIR__ . '/..' . '/acoustep/entrust-gui/src/Contracts/HashMethodInterface.php',
+        'Acoustep\\EntrustGui\\EntrustGuiServiceProvider' => __DIR__ . '/..' . '/acoustep/entrust-gui/src/EntrustGuiServiceProvider.php',
+        'Acoustep\\EntrustGui\\Events\\EventInterface' => __DIR__ . '/..' . '/acoustep/entrust-gui/src/Events/EventInterface.php',
+        'Acoustep\\EntrustGui\\Events\\PermissionCreatedEvent' => __DIR__ . '/..' . '/acoustep/entrust-gui/src/Events/PermissionCreatedEvent.php',
+        'Acoustep\\EntrustGui\\Events\\PermissionDeletedEvent' => __DIR__ . '/..' . '/acoustep/entrust-gui/src/Events/PermissionDeletedEvent.php',
+        'Acoustep\\EntrustGui\\Events\\PermissionUpdatedEvent' => __DIR__ . '/..' . '/acoustep/entrust-gui/src/Events/PermissionUpdatedEvent.php',
+        'Acoustep\\EntrustGui\\Events\\RoleCreatedEvent' => __DIR__ . '/..' . '/acoustep/entrust-gui/src/Events/RoleCreatedEvent.php',
+        'Acoustep\\EntrustGui\\Events\\RoleDeletedEvent' => __DIR__ . '/..' . '/acoustep/entrust-gui/src/Events/RoleDeletedEvent.php',
+        'Acoustep\\EntrustGui\\Events\\RoleUpdatedEvent' => __DIR__ . '/..' . '/acoustep/entrust-gui/src/Events/RoleUpdatedEvent.php',
+        'Acoustep\\EntrustGui\\Events\\UserCreatedEvent' => __DIR__ . '/..' . '/acoustep/entrust-gui/src/Events/UserCreatedEvent.php',
+        'Acoustep\\EntrustGui\\Events\\UserDeletedEvent' => __DIR__ . '/..' . '/acoustep/entrust-gui/src/Events/UserDeletedEvent.php',
+        'Acoustep\\EntrustGui\\Events\\UserUpdatedEvent' => __DIR__ . '/..' . '/acoustep/entrust-gui/src/Events/UserUpdatedEvent.php',
+        'Acoustep\\EntrustGui\\Gateways\\ManyToManyGateway' => __DIR__ . '/..' . '/acoustep/entrust-gui/src/Gateways/ManyToManyGateway.php',
+        'Acoustep\\EntrustGui\\Gateways\\ManyToManyGatewayInterface' => __DIR__ . '/..' . '/acoustep/entrust-gui/src/Gateways/ManyToManyGatewayInterface.php',
+        'Acoustep\\EntrustGui\\Gateways\\PermissionGateway' => __DIR__ . '/..' . '/acoustep/entrust-gui/src/Gateways/PermissionGateway.php',
+        'Acoustep\\EntrustGui\\Gateways\\RoleGateway' => __DIR__ . '/..' . '/acoustep/entrust-gui/src/Gateways/RoleGateway.php',
+        'Acoustep\\EntrustGui\\Gateways\\UserGateway' => __DIR__ . '/..' . '/acoustep/entrust-gui/src/Gateways/UserGateway.php',
+        'Acoustep\\EntrustGui\\Http\\Controllers\\ManyToManyController' => __DIR__ . '/..' . '/acoustep/entrust-gui/src/Http/Controllers/ManyToManyController.php',
+        'Acoustep\\EntrustGui\\Http\\Controllers\\PermissionsController' => __DIR__ . '/..' . '/acoustep/entrust-gui/src/Http/Controllers/PermissionsController.php',
+        'Acoustep\\EntrustGui\\Http\\Controllers\\RolesController' => __DIR__ . '/..' . '/acoustep/entrust-gui/src/Http/Controllers/RolesController.php',
+        'Acoustep\\EntrustGui\\Http\\Controllers\\UsersController' => __DIR__ . '/..' . '/acoustep/entrust-gui/src/Http/Controllers/UsersController.php',
+        'Acoustep\\EntrustGui\\Http\\Middleware\\AdminAuth' => __DIR__ . '/..' . '/acoustep/entrust-gui/src/Http/Middleware/AdminAuth.php',
+        'Acoustep\\EntrustGui\\Models\\Permission' => __DIR__ . '/..' . '/acoustep/entrust-gui/src/Models/Permission.php',
+        'Acoustep\\EntrustGui\\Models\\Role' => __DIR__ . '/..' . '/acoustep/entrust-gui/src/Models/Role.php',
+        'Acoustep\\EntrustGui\\Models\\User' => __DIR__ . '/..' . '/acoustep/entrust-gui/src/Models/User.php',
+        'Acoustep\\EntrustGui\\Repositories\\ManyToManyRepositoryEloquent' => __DIR__ . '/..' . '/acoustep/entrust-gui/src/Repositories/ManyToManyRepositoryEloquent.php',
+        'Acoustep\\EntrustGui\\Repositories\\PermissionRepository' => __DIR__ . '/..' . '/acoustep/entrust-gui/src/Repositories/PermissionRepository.php',
+        'Acoustep\\EntrustGui\\Repositories\\PermissionRepositoryEloquent' => __DIR__ . '/..' . '/acoustep/entrust-gui/src/Repositories/PermissionRepositoryEloquent.php',
+        'Acoustep\\EntrustGui\\Repositories\\RoleRepository' => __DIR__ . '/..' . '/acoustep/entrust-gui/src/Repositories/RoleRepository.php',
+        'Acoustep\\EntrustGui\\Repositories\\RoleRepositoryEloquent' => __DIR__ . '/..' . '/acoustep/entrust-gui/src/Repositories/RoleRepositoryEloquent.php',
+        'Acoustep\\EntrustGui\\Repositories\\UserRepository' => __DIR__ . '/..' . '/acoustep/entrust-gui/src/Repositories/UserRepository.php',
+        'Acoustep\\EntrustGui\\Repositories\\UserRepositoryEloquent' => __DIR__ . '/..' . '/acoustep/entrust-gui/src/Repositories/UserRepositoryEloquent.php',
+        'Acoustep\\EntrustGui\\Traits\\DeleteModelTrait' => __DIR__ . '/..' . '/acoustep/entrust-gui/src/Traits/DeleteModelTrait.php',
+        'Acoustep\\EntrustGui\\Traits\\FindModelTrait' => __DIR__ . '/..' . '/acoustep/entrust-gui/src/Traits/FindModelTrait.php',
+        'Acoustep\\EntrustGui\\Traits\\GetPermissionModelNameTrait' => __DIR__ . '/..' . '/acoustep/entrust-gui/src/Traits/GetPermissionModelNameTrait.php',
+        'Acoustep\\EntrustGui\\Traits\\GetPermissionUserRelationNameTrait' => __DIR__ . '/..' . '/acoustep/entrust-gui/src/Traits/GetPermissionUserRelationNameTrait.php',
+        'Acoustep\\EntrustGui\\Traits\\GetRoleModelNameTrait' => __DIR__ . '/..' . '/acoustep/entrust-gui/src/Traits/GetRoleModelNameTrait.php',
+        'Acoustep\\EntrustGui\\Traits\\GetRoleRelationNameTrait' => __DIR__ . '/..' . '/acoustep/entrust-gui/src/Traits/GetRoleRelationNameTrait.php',
+        'Acoustep\\EntrustGui\\Traits\\PaginationGatewayTrait' => __DIR__ . '/..' . '/acoustep/entrust-gui/src/Traits/PaginationGatewayTrait.php',
+        'Acoustep\\EntrustGui\\Traits\\SetPermissionModelTrait' => __DIR__ . '/..' . '/acoustep/entrust-gui/src/Traits/SetPermissionModelTrait.php',
+        'Acoustep\\EntrustGui\\Traits\\SetRoleModelTrait' => __DIR__ . '/..' . '/acoustep/entrust-gui/src/Traits/SetRoleModelTrait.php',
+        'Acoustep\\EntrustGui\\Traits\\SetUserModelTrait' => __DIR__ . '/..' . '/acoustep/entrust-gui/src/Traits/SetUserModelTrait.php',
         'App\\Console\\Commands\\Inspire' => __DIR__ . '/../..' . '/app/Console/Commands/Inspire.php',
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Country' => __DIR__ . '/../..' . '/app/Country.php',
@@ -772,6 +841,27 @@ class ComposerStaticInit9df880584d5381e52292c490da2e2a57
         'Dotenv\\Exception\\ValidationException' => __DIR__ . '/..' . '/vlucas/phpdotenv/src/Exception/ValidationException.php',
         'Dotenv\\Loader' => __DIR__ . '/..' . '/vlucas/phpdotenv/src/Loader.php',
         'Dotenv\\Validator' => __DIR__ . '/..' . '/vlucas/phpdotenv/src/Validator.php',
+        'Esensi\\Model\\Contracts\\EncryptingModelInterface' => __DIR__ . '/..' . '/esensi/model/src/Contracts/EncryptingModelInterface.php',
+        'Esensi\\Model\\Contracts\\HashingModelInterface' => __DIR__ . '/..' . '/esensi/model/src/Contracts/HashingModelInterface.php',
+        'Esensi\\Model\\Contracts\\JugglingModelInterface' => __DIR__ . '/..' . '/esensi/model/src/Contracts/JugglingModelInterface.php',
+        'Esensi\\Model\\Contracts\\PurgingModelInterface' => __DIR__ . '/..' . '/esensi/model/src/Contracts/PurgingModelInterface.php',
+        'Esensi\\Model\\Contracts\\RelatingModelInterface' => __DIR__ . '/..' . '/esensi/model/src/Contracts/RelatingModelInterface.php',
+        'Esensi\\Model\\Contracts\\SluggableModelInterface' => __DIR__ . '/..' . '/esensi/model/src/Contracts/SluggableModelInterface.php',
+        'Esensi\\Model\\Contracts\\SoftDeletingModelInterface' => __DIR__ . '/..' . '/esensi/model/src/Contracts/SoftDeletingModelInterface.php',
+        'Esensi\\Model\\Contracts\\ValidatingModelInterface' => __DIR__ . '/..' . '/esensi/model/src/Contracts/ValidatingModelInterface.php',
+        'Esensi\\Model\\Model' => __DIR__ . '/..' . '/esensi/model/src/Model.php',
+        'Esensi\\Model\\Observers\\HashingModelObserver' => __DIR__ . '/..' . '/esensi/model/src/Observers/HashingModelObserver.php',
+        'Esensi\\Model\\Observers\\PurgingModelObserver' => __DIR__ . '/..' . '/esensi/model/src/Observers/PurgingModelObserver.php',
+        'Esensi\\Model\\Observers\\ValidatingModelObserver' => __DIR__ . '/..' . '/esensi/model/src/Observers/ValidatingModelObserver.php',
+        'Esensi\\Model\\SoftModel' => __DIR__ . '/..' . '/esensi/model/src/SoftModel.php',
+        'Esensi\\Model\\Traits\\EncryptingModelTrait' => __DIR__ . '/..' . '/esensi/model/src/Traits/EncryptingModelTrait.php',
+        'Esensi\\Model\\Traits\\HashingModelTrait' => __DIR__ . '/..' . '/esensi/model/src/Traits/HashingModelTrait.php',
+        'Esensi\\Model\\Traits\\JugglingModelTrait' => __DIR__ . '/..' . '/esensi/model/src/Traits/JugglingModelTrait.php',
+        'Esensi\\Model\\Traits\\PurgingModelTrait' => __DIR__ . '/..' . '/esensi/model/src/Traits/PurgingModelTrait.php',
+        'Esensi\\Model\\Traits\\RelatingModelTrait' => __DIR__ . '/..' . '/esensi/model/src/Traits/RelatingModelTrait.php',
+        'Esensi\\Model\\Traits\\SluggableModelTrait' => __DIR__ . '/..' . '/esensi/model/src/Traits/SluggableModelTrait.php',
+        'Esensi\\Model\\Traits\\SoftDeletingModelTrait' => __DIR__ . '/..' . '/esensi/model/src/Traits/SoftDeletingModelTrait.php',
+        'Esensi\\Model\\Traits\\ValidatingModelTrait' => __DIR__ . '/..' . '/esensi/model/src/Traits/ValidatingModelTrait.php',
         'Faker\\Calculator\\Iban' => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker/Calculator/Iban.php',
         'Faker\\Calculator\\Inn' => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker/Calculator/Inn.php',
         'Faker\\Calculator\\Luhn' => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker/Calculator/Luhn.php',
@@ -3528,8 +3618,28 @@ class ComposerStaticInit9df880584d5381e52292c490da2e2a57
         'Symfony\\Polyfill\\Util\\TestListener' => __DIR__ . '/..' . '/symfony/polyfill-util/TestListener.php',
         'TestCase' => __DIR__ . '/../..' . '/tests/TestCase.php',
         'Text_Template' => __DIR__ . '/..' . '/phpunit/php-text-template/src/Template.php',
+        'Watson\\Validating\\ValidatingInterface' => __DIR__ . '/..' . '/watson/validating/src/ValidatingInterface.php',
+        'Watson\\Validating\\ValidatingModel' => __DIR__ . '/..' . '/watson/validating/src/ValidatingModel.php',
+        'Watson\\Validating\\ValidatingObserver' => __DIR__ . '/..' . '/watson/validating/src/ValidatingObserver.php',
+        'Watson\\Validating\\ValidatingTrait' => __DIR__ . '/..' . '/watson/validating/src/ValidatingTrait.php',
+        'Watson\\Validating\\ValidationException' => __DIR__ . '/..' . '/watson/validating/src/ValidationException.php',
         'Webmozart\\Assert\\Assert' => __DIR__ . '/..' . '/webmozart/assert/src/Assert.php',
         'XdgBaseDir\\Xdg' => __DIR__ . '/..' . '/dnoegel/php-xdg-base-dir/src/Xdg.php',
+        'Zizaco\\Entrust\\Contracts\\EntrustPermissionInterface' => __DIR__ . '/..' . '/zizaco/entrust/src/Entrust/Contracts/EntrustPermissionInterface.php',
+        'Zizaco\\Entrust\\Contracts\\EntrustRoleInterface' => __DIR__ . '/..' . '/zizaco/entrust/src/Entrust/Contracts/EntrustRoleInterface.php',
+        'Zizaco\\Entrust\\Contracts\\EntrustUserInterface' => __DIR__ . '/..' . '/zizaco/entrust/src/Entrust/Contracts/EntrustUserInterface.php',
+        'Zizaco\\Entrust\\Entrust' => __DIR__ . '/..' . '/zizaco/entrust/src/Entrust/Entrust.php',
+        'Zizaco\\Entrust\\EntrustFacade' => __DIR__ . '/..' . '/zizaco/entrust/src/Entrust/EntrustFacade.php',
+        'Zizaco\\Entrust\\EntrustPermission' => __DIR__ . '/..' . '/zizaco/entrust/src/Entrust/EntrustPermission.php',
+        'Zizaco\\Entrust\\EntrustRole' => __DIR__ . '/..' . '/zizaco/entrust/src/Entrust/EntrustRole.php',
+        'Zizaco\\Entrust\\EntrustServiceProvider' => __DIR__ . '/..' . '/zizaco/entrust/src/Entrust/EntrustServiceProvider.php',
+        'Zizaco\\Entrust\\Middleware\\EntrustAbility' => __DIR__ . '/..' . '/zizaco/entrust/src/Entrust/Middleware/EntrustAbility.php',
+        'Zizaco\\Entrust\\Middleware\\EntrustPermission' => __DIR__ . '/..' . '/zizaco/entrust/src/Entrust/Middleware/EntrustPermission.php',
+        'Zizaco\\Entrust\\Middleware\\EntrustRole' => __DIR__ . '/..' . '/zizaco/entrust/src/Entrust/Middleware/EntrustRole.php',
+        'Zizaco\\Entrust\\MigrationCommand' => __DIR__ . '/..' . '/zizaco/entrust/src/commands/MigrationCommand.php',
+        'Zizaco\\Entrust\\Traits\\EntrustPermissionTrait' => __DIR__ . '/..' . '/zizaco/entrust/src/Entrust/Traits/EntrustPermissionTrait.php',
+        'Zizaco\\Entrust\\Traits\\EntrustRoleTrait' => __DIR__ . '/..' . '/zizaco/entrust/src/Entrust/Traits/EntrustRoleTrait.php',
+        'Zizaco\\Entrust\\Traits\\EntrustUserTrait' => __DIR__ . '/..' . '/zizaco/entrust/src/Entrust/Traits/EntrustUserTrait.php',
         'phpDocumentor\\Reflection\\DocBlock' => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src/DocBlock.php',
         'phpDocumentor\\Reflection\\DocBlockFactory' => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src/DocBlockFactory.php',
         'phpDocumentor\\Reflection\\DocBlockFactoryInterface' => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src/DocBlockFactoryInterface.php',
